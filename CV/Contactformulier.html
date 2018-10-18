@@ -7,25 +7,37 @@
 <form>
 <body style="background-color: darkblue">
    <font color="white">
-    <h1>Contactformulier</h1>
+    <h1>Form</h1>
     <img src="Contactformulier.jpg" alt="Foto" width="400px" heigth="400px"/>
     <br>
+       <h2>What games do you like?</h2>
+    <tr>
+        <select name="What games do you like? You may select multiple" mutiple>
+            <option value="FPS">First Person Shooter</option>
+            <option value="Surival">Survival</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Co-Op">Co-Op</option>
+            <option value="Fighting">Fighting</option>
+        </select>    
+        </tr>
     
-    <table border="1px">
+        <h3>Please fill out this form :</h3>
+    
+    <table>
         <tr>
-        <td><label for="firstname">FirstName:</label>   
+        <td><label for="firstname">*FirstName:</label>   
             <input type="text" name="firstname"></td> 
             
-        <td><label for="lastname">Lastname:</label>
+        <td><label for="lastname">*Lastname:</label>
         <input type="text" name="lastname"></td>    
         </tr>
         
         <tr>
-        <td><label for="date">Date Of Birth:</label>
+        <td><label for="date">*Date Of Birth:</label>
         <input type=date name="Date Of Birth"></td>
         
         
-        <td><label for="email">Email:</label>
+        <td><label for="email">*Email:</label>
         <input type=email name="Email" required></td>
         </tr>
         
@@ -35,7 +47,9 @@
         </tr>
         
         
-        <td><input type="reset" value="Clear" /></td>
+        <td><input type="reset" value="Clear" />
+            <input type="submit" value="Submit" /></td>
+
 
     </table>
     
