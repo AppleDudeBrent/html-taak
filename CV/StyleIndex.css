@@ -1,36 +1,102 @@
-body
-{
-    background-image:url(ss.jpg);
-    color: white;
+
+* {
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Verdana;
+    font-size: 5;
+    padding: 10px;
+    background-color: darkgrey;
+    background-image: url(theodor-lundqvist-364382-unsplash.jpg);
+}
 
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    background-image: url(free-the-vbucks-banner.jpg);
+    background-size: 100em 300px;
+    background-repeat: no-repeat;
+}
 
-ul.cl {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #0033cc;
 }
 
-ul.cl li {float: left;}
-
-ul.cl li a {
+/* Style the topnav links */
+.topnav a {
+    float: left;
     display: block;
-    color: white;
+    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-ul.cl li a:hover:not(.active) {background-color: #555;}
-
-ul.cl li a.active {background-color: #4CAF50;}
-
-ul.cl li.right {float: right;}
-
-a
-{
-    text-decoration: none;
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #aaa;
+    color: black;
 }
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    font-size: 8;
+    float: left;
+    width: 25%;
+    padding-left: 15px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: #aaa;
+    padding: 10px;
+    margin-top: 1px;
+}
+
+.twitterinsta {
+    
+    top: 50%;
+    left: 50%;
+    width: 250px;
+    height: 100px;
+    margin:10px 10px;
+    -webkit-animation:spin 4s;
+    -moz-animation:spin 4s;
+    animation:spin 4s;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
