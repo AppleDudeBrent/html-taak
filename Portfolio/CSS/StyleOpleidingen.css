@@ -1,0 +1,53 @@
+body 
+{
+    background-color: darkgray;
+    background-image: url(../Pictures/Venom.jpg);
+    color: white;
+    font-size: 18pt;
+    margin-left: 50px;
+}
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.education {
+    
+    float: left;
+}
+
+
+ul.cl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+ul.cl li {float: left;}
+
+ul.cl li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.cl li a:hover:not(.active) {background-color;}
+
+ul.cl li a.active {background-color;}
+
+ul.cl li.right {float: right;}
+
+a
+{
+    text-decoration: none;
+}
