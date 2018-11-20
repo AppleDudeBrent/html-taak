@@ -1,8 +1,11 @@
+@media screen and (min-width: 40em) {
 body 
 {
     background-color: darkgrey;
-    color: black;
+    background-image: url(../Pictures/contact-form-background.jpg); 
+    color: antiquewhite;
 }
+
 
 .topnav a {
     float: left;
@@ -14,6 +17,7 @@ body
 }
 
 .music {
+    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,8 +38,10 @@ body
     animation:spin 4s;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 
 ul.cl {
     list-style-type: none;
@@ -64,4 +70,5 @@ ul.cl li.right {float: right;}
 a
 {
     text-decoration: none;
+}
 }

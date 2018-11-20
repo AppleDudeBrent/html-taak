@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-7">
+    <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/StyleIndex.css">
-    <script>
-        var bleep = new Audio();
+   
+    <link rel="stylesheet" type="text/css" href="../CSS/Slider.css" />
+    <script type="text/javascript" src="..//Script/jquery.js"></script>
+
+ <script> var bleep = new Audio();
         bleep.src = '../Audio/Venom.mp3';
     </script>
 </head>
@@ -20,6 +23,7 @@
   <a href=Opleidingen.html>Education</a>
   <a href=hobbys.html>Hobbys</a>
   <a href=Contactformulier.html>Contact Form</a>
+  <a href="https://www.dropbox.com/sh/5d42xumku7zstnz/AAAOdxL8yBlQmaUBsnkUqOaUa?dl=0" target="_blank">Portfolio/Stages</a>
   <a href=index.html style="float:right">Home Page</a>
 </div>
 
@@ -30,14 +34,23 @@
     </div>
     
     <div class="card">
-      <h2>Some Pictures I Took</h2>
-      <h3>For full resolution, please click the pictures.</h3>
-      <p>One of my hobbys is Photography, if you want to find out more about my other hobbies. Please click the tabs.</p>
-      <div> <a href="https://www.dropbox.com/s/mv1v4ndnf7okup2/Photography1.jpg?dl=0" target="_blank"> <img src="../Pictures/Photography1.jpg" alt="" style="height:250px"></a>
-      <a href="https://www.dropbox.com/s/2lw1y0lrx7msyer/Photography.jpg?dl=0" target="_blank"><img src="../Pictures/Photography.jpg" alt="" style="height:250px"></a>
-      <p>These pictures were taken with : <a href="https://www.nikon.be/nl_BE/product/digital-cameras/slr/professional/d810" target="_blank">Official Nikon Website</a> <br/>
-      Where to buy? <a href="https://www.fotokonijnenberg.be/nikon-d810-body" target="_blank">FotoKonijnenberg</a> </p>
-      </div>
+      <h2>Slideshow : Some Pictures I Took</h2>
+      
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="../Pictures/_dsc4070.jpg" alt="" title="" id="wows1_0"/></li>
+		<li><img src="../Pictures/_dsc4308.jpg" alt="" title="" id="wows1_1"/></li>
+		<li><img src="../Pictures/_dsc4314.jpg" alt="" title="" id="wows1_2"/></li>
+		<li><img src="../Pictures/_sbr0757.jpg" alt="" title="" id="wows1_5"/></li>
+		<li><img src="../Pictures/photography.jpg" alt="slideshow html code" title="" id="wows1_8"/></li>
+		<li><img src="../Pictures/photography1.jpg" alt="" title="" id="wows1_9"/></li>
+	</ul></div>
+<div class="ws_script" style="position:absolute;left:-99%"></div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="..//Script/wowslider.js"></script>
+<script type="text/javascript" src="..//Script/script.js"></script>
+
       
     </div>
   </div>
@@ -46,7 +59,7 @@
     <div class="card">
       <h2>Who am i?</h2>
       <div> <img src="../Pictures/Venom.gif" alt="Venom" style="height:130px;" onclick="bleep.play()"></div>
-      <p>My name is Brent, I live in Belgium, I am 24 years old</p>
+      <p>My name is Brent, I'm from Belgium, I am 24 years old</p>
     </div>
     
     
@@ -63,6 +76,7 @@
 <div class="footer">
 
 </div>
+
 
 </body>
 </html>
